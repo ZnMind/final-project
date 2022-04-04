@@ -19,9 +19,7 @@ const Test = () => {
             <div className="container text-center">
                 <div className="row">
                     <h1>Test Page</h1>
-                    {/* {officeArr.map(arr => (
-                        <p>{arr.name}</p>
-                    ))} */}
+                    
                 </div>
             </div>
         </>
