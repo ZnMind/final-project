@@ -1,0 +1,59 @@
+body {
+    height: 110%;
+}
+
+#homeBody {
+
+    background-image:linear-gradient(110deg, #090909 65%, #fafaf8 35%) ;
+    /* background-image: url(seal200.png),linear-gradient(110deg, #090909 65%, #fafaf8 35%) ; */
+    /* background-repeat: no-repeat,no-repeat;
+    background-size: 100px, cover; */
+    /* height: 100%; */
+    
+    
+}    
+
+
+.homeCard {
+background-image: linear-gradient(#090909,#252525);
+color: rgb(253, 253, 253);
+
+/* width: 50%; */
+/* margin-left: 250px; */
+}
+
+.searchBtn {
+    background-color: #f0fff3;
+    border-radius: 5px;
+}
+
+.searchInput {
+    background-color: #f0fff3;
+}
+
+
+.navHomeBtn {
+    color:rgb(2, 2, 2);
+    outline-color: rgb(2, 2, 2);
+    
+    
+}
+
+.beHeard {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin-left: 350px;
+    color: rgb(156, 3, 3);
+
+}
+
+
+
+.pwrBy{
+    color: white;
+    margin-top: 240px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
