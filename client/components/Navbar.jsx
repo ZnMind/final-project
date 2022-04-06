@@ -6,7 +6,7 @@ const Navbar = () => {
 
         
         <div className="container  p-2  navBar">
-            {/* <img className=""src={image}alt="" />  */}
+            
             <p className="beHeard">Be Heard, Alabama!</p>
             
             <div className="nav navHomeBtn d-flex ">
