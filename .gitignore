@@ -2,3 +2,4 @@
 dist
 public/js/app.js
 config.env
+getip.php
