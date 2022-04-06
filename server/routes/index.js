@@ -1,9 +1,9 @@
 import * as express from "express";
 const router = express.Router();
 
-import chirpsRouter from "./example";
+import addressRouter from "./test";
 
 // localhost:3000/api/chirps/
-router.use("/example", chirpsRouter);
+router.use("/address", addressRouter);
 
 export default router;
