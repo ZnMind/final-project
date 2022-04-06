@@ -1,14 +1,13 @@
-body {
-    height: 110%;
-}
+
 
 #homeBody {
 
-    background-image:linear-gradient(110deg, #090909 65%, #fafaf8 35%) ;
-    /* background-image: url(seal200.png),linear-gradient(110deg, #090909 65%, #fafaf8 35%) ; */
-    /* background-repeat: no-repeat,no-repeat;
-    background-size: 100px, cover; */
-    /* height: 100%; */
+    
+    background-image: url('../images/seal200.png'),linear-gradient(110deg, #090909 65%, #fafaf8 35%) ;
+     background-repeat: no-repeat, no-repeat; 
+    background-size: 100px, cover; 
+    height:100%;
+    
     
     
 }    

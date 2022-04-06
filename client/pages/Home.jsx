@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "../components/images/home.css"
+import "../css/home.css"
 import Navbar from '../components/Navbar.jsx';
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
                     </div>
                 </main>
 
-                <h6 className="pwrBy mb-5">Powered By Google Civic Information API</h6>
+                <h6 className="pwrBy mb-3">Powered By Google Civic Information API</h6>
 
 
 
