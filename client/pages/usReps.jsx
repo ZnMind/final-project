@@ -10,7 +10,7 @@ const UsReps = () => {
 
 
   return(
-     <h1>test</h1> 
+     <h3>test</h3> 
   )
   }
 export default UsReps;
