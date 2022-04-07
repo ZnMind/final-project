@@ -3,16 +3,6 @@ const router = express.Router();
 
 import db from "../db";
 
-/* router.get("/", async (req, res) => {
-    
-    try {
-        let test = await db.address.all();
-        res.json(test);
-    } catch(e) {
-        console.log(e);
-    }
-}) */
-
 router.get("/:id?", async (req, res) => {
     try {
         let id = req.params.id;
