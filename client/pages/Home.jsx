@@ -1,14 +1,32 @@
-import React from 'react';
+import React, { useState, createContext } from 'react';
 import { Link } from "react-router-dom";
 import "../css/home.css"
 import Navbar from '../components/Navbar.jsx';
 
 const Home = () => {
+
+    const [location, setLocation] = useState('');
+
+    const buttonClick = () => {
+        window.location.href = "/Results"
+
+        let newAddress = {
+            address: location
+        };
+
+        fetch("http://localhost:3000/api/address", {
+            method: "POST",
+            redirect: "follow",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(newAddress)
+        });
+    }
+
     return (
         <>
-        
+
             <body id="homeBody">
-            <Navbar />
+                <Navbar />
 
                 <main className="container ">
                     <div className="row justify-content-center">
@@ -20,8 +38,16 @@ const Home = () => {
                                     <p className="card-text">
                                         Search for your local representatives.
                                     </p>
-                                    <input placeholder="address city state" type="text" className="searchInput m-1" />
-                                    <button className="searchBtn" type="submit">Submit</button>
+                                    <input placeholder="address city state" type="text" className="searchInput m-1" 
+                                    value={location} onChange={e => setLocation(e.target.value)} 
+                                    />
+                                    <button className="searchBtn"
+                                        type="submit"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            buttonClick();
+                                        }}
+                                        >Submit</button>
                                     <p>Or search by position</p>
                                     <Link to="/usSenators" className="btn btn-outline-danger m-2">U.S. Senators</Link>
                                     <Link to="/usReps" className="btn btn-outline-danger m-2">U.S. Representatives</Link>
