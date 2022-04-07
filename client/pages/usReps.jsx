@@ -53,10 +53,22 @@ const UsReps = () => {
                         <a href={rep.url}>Website</a>
                         <a
                           href={`//www.facebook.com/${rep.facebook_account}`}
+                          className="fa fa-facebook"
+                          style= {{color: "#3b5998"}}
                           target="_blank"
-                        >
-                          Facebook
-                        </a>
+                        ></a>
+                         <a
+                          href={`//www.twitter.com/${rep.twitter_account}`}
+                          className="fa fa-twitter"
+                          style= {{color: "#55acee"}}
+                          target="_blank"
+                        ></a>
+                         <a
+                          href={`//www.youtube.com/${rep.youtube_account}`}
+                          className="fa fa-youtube"
+                          style= {{color: "#cd201f"}}
+                          target="_blank"
+                        ></a>
                       </div>
                     </div>
                   </div>
