@@ -1,0 +1,6 @@
+.govBody {
+    
+    background-image: url('../images/seal200.png'),linear-gradient(110deg, #090909 65%, #fafaf800 35%), url('../images/cornTall.jpg') ;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: 100px, cover, cover;
+}

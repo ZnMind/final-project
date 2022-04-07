@@ -24,7 +24,7 @@ const UsSenators = () => {
                                         {/* <h6 className="card-subtitle">Washington DC</h6> */}
                                         <small className="card-subtitle mt-1">Republican Party</small>
                                         <h6 className="card-subtitle mt-1">Phone: (202) 224-5744</h6>
-                                        <p className="" >Mailing Address:<small >304 Russell Senate Office Building
+                                        <p className="" >Mailing Address:<small > 304 Russell Senate Office Building
                                             Washington,DC 20510</small></p>
                                         <a href="https://www.shelby.senate.gov/public/index.cfm/emailsenatorshelby">Email Form</a>
 
@@ -39,7 +39,7 @@ const UsSenators = () => {
                                         {/* <h6 className="card-subtitle">Washington DC</h6> */}
                                         <small className="card-title">Republican Party</small>
                                         <h6 className="card-subtitle mt-1">Phone: (202) 224-4124</h6>
-                                        <p className="">Mailing Address:<small>40 Dirksen Senate Office Building
+                                        <p className="">Mailing Address:<small> 40 Dirksen Senate Office Building
                                             Washington,DC 20510</small></p>
                                         <a href="https://www.tuberville.senate.gov/contact/contact-form/">Email Form</a>
                                     </div>
