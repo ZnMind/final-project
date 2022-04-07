@@ -5,6 +5,7 @@ import Test from './pages/Test.jsx';
 import UsSenators from "./pages/usSenators.jsx";
 import UsReps from "./pages/usReps.jsx";
 import Results from "./pages/Results.jsx";
+
 // import Navbar from "./components/Navbar.jsx";
 
 const App = () => {

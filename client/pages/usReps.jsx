@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import "../components/images/usReps.css";
+import "../css/usReps.css";
 
 const UsReps = () => {
   const [reps, setReps] = useState([]);
@@ -26,13 +26,15 @@ const UsReps = () => {
 
   return (
     <>
-      <Navbar />
+      
       <body id="usRepsBody">
+        <div id="repPics">
+        <Navbar />
         {reps.map((rep) => {
           if (rep.state == "AL") {
             return (
               <div id="rep-style" className="container-fluid">
-                <div className="row w-50">
+                <div className="row w-50 m-5">
                   <div id="test" className="col-12" key={rep.id}>
                     <div className="card shadow rounded text-center ">
                       {/* <img className="card-top" src="https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Terri_Sewell.jpg" alt="" /> */}
@@ -77,6 +79,8 @@ const UsReps = () => {
             );
           }
         })}
+
+        </div>
       </body>
     </>
   );
