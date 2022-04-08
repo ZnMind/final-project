@@ -23,13 +23,15 @@ const Test = () => {
     }, []); */
 
     useEffect(() => {
-        fetch(`http://localhost:3000/api/sen/${location}`)
+        if (location != ""){
+            fetch(`http://localhost:3000/api/state/${location}`)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
                 setDetails(data)
             })
             .catch(err => console.log(err));
+        }
     }, [location]);
 
     //Sends address to database and then changes the address to a URL for the Google API
@@ -59,7 +61,7 @@ const Test = () => {
         let myHeaders = new Headers({
             "X-API-Key": "KKlFJNSPxvPwrHnRXBPHe0LYjcq0URyZtNGDqiMc"
         })
-        fetch("https://api.propublica.org/congress/v1/117/senate/members.json", {
+        fetch("https://api.propublica.org/congress/v1/117/house/members.json", {
             headers: myHeaders
         })
             .then(response => response.json())
@@ -80,9 +82,10 @@ const Test = () => {
                         "name": element.first_name + " " + element.last_name,
                         "state": element.state,
                         "photo": `https://bioguide.congress.gov/bioguide/photo/${element.id.charAt(0)}/${element.id}.jpg`,
-                        "contact_form": element.contact_form,
+                        "url": element.url,
                         "party": element.party,
-                        "phone": element.phone
+                        "phone": element.phone,
+                        "district": element.ocd_id.split(":")[element.ocd_id.split(":").length - 1]
                     })
                 })
                 console.log(obj);
@@ -90,7 +93,7 @@ const Test = () => {
             })
             .then(async obj => {
                 obj.forEach(async element => {
-                    await fetch("http://localhost:3000/api/sen", {
+                    await fetch("http://localhost:3000/api/state", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(element)
@@ -103,6 +106,8 @@ const Test = () => {
     return (
         <>
             <div className="container">
+
+
 
                 {/* <div className="row">
                     <h1>Test Page</h1>
@@ -129,27 +134,28 @@ const Test = () => {
                     </ul>
                 </div> */}
 
-                <>
 
+
+                <button onClick={updateReps} disabled>Update US Reps</button>
+                <>
                     <body className="usSenatorsBody">
                         <Navbar />
                         <div id="usSenatorsWrapper">
                         <input value={location.toUpperCase()} onChange={e => setLocation(e.target.value)}></input>
-                            <h1 className="usSenatorsTitle text-center">U.S. Senators</h1>
+                            <h1 className="usSenatorsTitle text-center">U.S. Reps</h1>
                             {details.map(details => (
                             <div className="container senateContainer">
                                 <div className="row d-flex flex-row justify-content-center align-items-center ">
-                                    <div className="col-sm-3 ">
+                                    <div className="col-4 ">
                                         <div className="card shadow rounded text-center ">
                                             <img className="card-top" src={details.photo} alt="" />
                                             <div className="card-body bodyUsSenators">
                                                 <h5 className="card-title">{details.name}</h5>
                                                 <h6 className="card-subtitle">{details.state}</h6>
+                                                <h6 className="card-subtitle">District: {details.district}</h6>
                                                 <small className="card-subtitle mt-1">{details.party}</small>
                                                 <h6 className="card-subtitle mt-1">Phone: {details.phone}</h6>
-                                                {/* <p><small className="mt-1">Mailing Address: 304 Russell Senate Office Building
-                                                    Washington DC 20510</small></p> */}
-                                                <a href={details.contact_form} target="_blank">Contact Form</a>
+                                                <a href={details.url} target="_blank">Website</a>
                                             </div>
                                         </div>
                                     </div>
@@ -158,12 +164,14 @@ const Test = () => {
                             ))}
                         </div>
                     </body>
-
                 </>
 
-            </div>
-        </>
 
+
+            </div>
+
+
+        </>
 
     );
 }
