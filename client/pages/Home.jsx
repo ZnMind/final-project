@@ -60,7 +60,7 @@ const Home = () => {
                     </div>
                 </main>
 
-                <h6 className="pwrBy mb-3">Powered By Google Civic Information API</h6>
+                <h6 className="pwrBy m-5 ">Powered By Google Civic Information API</h6>
 
 
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-// import "../components/images/stateReps.css";
+//import "../css/stateReps.css";
 
 const StateReps = () => {
   const [reps, setReps] = useState([]);
