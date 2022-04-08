@@ -31,12 +31,12 @@ color: rgb(253, 253, 253);
 }
 
 
-.navHomeBtn {
+/* .navHomeBtn {
     color:rgb(2, 2, 2);
     outline-color: rgb(2, 2, 2);
     
     
-}
+} */
 
 .beHeard {
     font-family: 'Montserrat', sans-serif;
@@ -51,7 +51,8 @@ color: rgb(253, 253, 253);
 
 .pwrBy{
     color: white;
-    margin-top: 240px;
+    /* margin-top: 240px; */
+    
     font-family: 'Roboto', sans-serif;
     
     
