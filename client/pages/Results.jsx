@@ -5,6 +5,8 @@ import "../css/results.css";
 
 const Results = () => {
 
+    let officeArr = [];
+
     const [details, setDetails] = useState([]);
 
     useEffect(() => {
@@ -20,6 +22,19 @@ const Results = () => {
                     .then(response => response.json())
                     .then(data => {
                         console.log(data);
+                        //Offices and Officials arrays are different lengths. Have to get creative with for loops to map them together
+                        data.offices.forEach(element => {
+                            if (element.officialIndices.length > 1) {
+                                for (let i = 0; i < element.officialIndices.length; i++) {
+                                    officeArr.push(element.name);
+                                }
+                            } else {
+                                officeArr.push(element.name);
+                            }
+                        })
+                        for (let i = 0; i < officeArr.length; i++) {
+                            data.officials[i].office = officeArr[i];
+                        }
                         setDetails(data.officials);
                     })
                     .catch(err => {
@@ -46,6 +61,9 @@ const Results = () => {
                                         <h4 className="card-title">
                                             {details.name}
                                         </h4>
+                                        <h6 className="card-title">
+                                            {details.office}
+                                        </h6>
                                         {/* <h6 className="card-subtitle">
                                             District: {rep.district}
                                             </h6> */}
