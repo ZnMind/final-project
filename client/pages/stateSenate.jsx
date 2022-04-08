@@ -22,11 +22,14 @@ const StateSenate = () => {
   return (
     <>
       <Navbar />
-      <body id="stateSenate">
+      <body
+        id="stateReps"
+        className="container d-flex flex-row justify-content-center align-items-center flex-wrap"
+      >
         {senate.map((sen) => (
-          <div id="rep-style" className="container-fluid">
-            <div className="row w-50">
-              <div id="test" className="col-12">
+          <div id="rep-style" className="container w-50">
+            <div className="row d-flex flex-row  p-0 m-2">
+              <div id="test" className=" w-75">
                 <div className="card shadow rounded text-center">
                   <div className="card-header pull-left">
                     <img
@@ -34,6 +37,7 @@ const StateSenate = () => {
                       src="https://bloximages.newyork1.vip.townnews.com/dothaneagle.com/content/tncms/assets/v3/editorial/c/7f/c7f0931a-94ee-11ec-9b59-1fece2a29e9a/606b374024551.image.png"
                       alt="Card image cap"
                     ></img>
+
                     <div className="card-body">
                       <h4 className="card-title">{sen.name}</h4>
                       <h6 className="card-subtitle mt-2">
@@ -45,10 +49,16 @@ const StateSenate = () => {
                       <h6 className="card-subtitle mt-2">Party: {sen.party}</h6>
 
                       {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
-                      <a className="m-2 btn btn-outline-primary" href={`mailto:${sen.email}`}>
+                      <a
+                        className="m-2 btn btn-outline-primary"
+                        href={`mailto:${sen.email}`}
+                      >
                         Email
                       </a>
-                      <a className="m-2 btn btn-outline-primary" href={sen.openstates_url}>
+                      <a
+                        className="m-2 btn btn-outline-primary"
+                        href={sen.openstates_url}
+                      >
                         Website
                       </a>
                     </div>

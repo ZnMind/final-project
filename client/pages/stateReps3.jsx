@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
 import { Link } from "react-router-dom";
-// import "../css/stateReps.css";
+import "../css/stateReps.css";
 
 const StateReps3 = () => {
   const [reps, setReps] = useState([]);
@@ -26,11 +26,11 @@ const StateReps3 = () => {
       <Link to="/stateReps2" className="btn btn-danger m-2">
         Previous Page
       </Link>
-      <body id="stateReps">
+      <body id="stateReps" className="container d-flex flex-row justify-content-center align-items-center flex-wrap">
         {reps.map((rep) => (
-          <div id="rep-style" className="container-fluid">
-            <div className="row w-50">
-              <div id="test" className="col-12">
+          <div id="rep-style" className="container w-50">
+            <div className="row d-flex flex-row  p-0 m-2">
+              <div id="test" className=" w-75">
                 <div className="card shadow rounded text-center">
                   <div className="card-header pull-left">
                     <img
@@ -50,13 +50,13 @@ const StateReps3 = () => {
 
                       {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={`mailto:${rep.email}`}
                       >
                         Email
                       </a>
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={rep.openstates_url}
                       >
                         Website
