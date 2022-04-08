@@ -52,7 +52,7 @@ const UsReps = () => {
                           Phone # {rep.phone}
                         </h6>
                         {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
-                        <a className = "btn btn-outline-primary" href={rep.url}>Website</a>
+                        <a className = "btn btn-outline-danger mt-3" href={rep.url}>Website</a>
                         <a 
                           href={`//www.facebook.com/${rep.facebook_account}`}
                           className="fa fa-facebook m-2"
@@ -67,7 +67,7 @@ const UsReps = () => {
                         ></a>
                          <a
                           href={`//www.youtube.com/${rep.youtube_account}`}
-                          className="fa fa-youtube m-2"
+                          className="fa fa-youtube m-2 "
                           style= {{color: "#cd201f"}}
                           target="_blank"
                         ></a>
