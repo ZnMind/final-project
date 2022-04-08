@@ -28,7 +28,7 @@ const StateSenate = () => {
       <Navbar />
         {senate.map((sen) => (
           <div id="rep-style" className="container w-50">
-            <div className="row d-flex flex-row  p-0 m-2">
+            <div className="row d-flex flex-row  p-0 m-2 justify-content-center">
               <div id="test" className=" w-75">
                 <div className="card shadow rounded text-center">
                   <div className="card-header pull-left">

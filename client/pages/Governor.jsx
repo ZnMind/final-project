@@ -24,18 +24,7 @@ const Governor = () => {
                         </div>
                     </div>
 
-                    <div className="col">
-                        <div className="card shadow rounded text-center">
-                            <img className="card-img-top" src="https://pbs.twimg.com/profile_images/938255592145158144/df0x-whj_400x400.jpg" />
-                            <div className="card-body govCardBody">
-                                <h5 className="card-title">Will Ainsworth</h5>
-                                <h6>Leutenant Governor</h6>
-                                <p>Phone:<small> (334) 261-9590</small></p>
-                                <p className="card-text mt-02">Mailing Address: <small>11 South Union Street Montgomery, AL 36130</small></p>
-                               <a href="mailto:ltgov@ltgov.alabama.gov" className="govEmail">Email </a>
-                            </div>
-                        </div>
-                    </div>
+                    
                                 
 
 
@@ -61,6 +50,19 @@ const Governor = () => {
                                 <p>Phone:<small> (334) 242-7200</small></p>
                                 <p className="card-text mt-02">Mailing Address: <small>P.O. Box 5616 Montgomery, AL 36103-5616</small></p>
                                <a href="mailto:John.Merrill@sos.alabama.gov" className="govEmail">Email</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col">
+                        <div className="card shadow rounded text-center">
+                            <img className="card-img-top" src="https://pbs.twimg.com/profile_images/938255592145158144/df0x-whj_400x400.jpg" />
+                            <div className="card-body govCardBody">
+                                <h5 className="card-title">Will Ainsworth</h5>
+                                <h6>Leutenant Governor</h6>
+                                <p>Phone:<small> (334) 261-9590</small></p>
+                                <p className="card-text mt-02">Mailing Address: <small>11 South Union Street Montgomery, AL 36130</small></p>
+                               <a href="mailto:ltgov@ltgov.alabama.gov" className="govEmail">Email </a>
                             </div>
                         </div>
                     </div>
