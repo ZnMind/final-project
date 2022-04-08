@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import "../css/stateReps.css";
+//import "../css/stateReps.css";
 import { Link } from "react-router-dom";
 
 

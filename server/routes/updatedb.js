@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
     try {
         let body = req.body;
         console.log(body);
-        let dbRes = await db.address.insertState(body.id, body.name, body.state);
+        let dbRes = await db.address.insertState(body.id, body.name, body.state, body.photo, body.url, body.party, body.phone, body.district);
         res.status(200).json(dbRes);
     } catch(e) {
         console.log(e);
