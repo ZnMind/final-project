@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import "../css/usReps.css";
+import "../css/stateSenate.css";
 
 const StateSenate = () => {
   const [senate, setSenate] = useState([]);
@@ -21,11 +21,11 @@ const StateSenate = () => {
 
   return (
     <>
-      <Navbar />
+      
       <body
-        id="stateReps"
-        className="container d-flex flex-row justify-content-center align-items-center flex-wrap"
-      >
+        id="stateSenate"
+        className=" d-flex flex-row justify-content-center align-items-center flex-wrap">
+      <Navbar />
         {senate.map((sen) => (
           <div id="rep-style" className="container w-50">
             <div className="row d-flex flex-row  p-0 m-2">
@@ -50,13 +50,13 @@ const StateSenate = () => {
 
                       {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={`mailto:${sen.email}`}
                       >
                         Email
                       </a>
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={sen.openstates_url}
                       >
                         Website

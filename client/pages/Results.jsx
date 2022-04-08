@@ -53,7 +53,7 @@ const Results = () => {
             {details.map((details, index) => {
                 return (
                     <div id="rep-style" className="container-fluid w-50" key={index}>
-                        <div className="row d-flex flex-row  p-0 m-2">
+                        <div className="row d-flex flex-row m-2">
                             <div id="test" className="col-12">
                                 <div className="card shadow rounded text-center ">
                                     {/* <img className="card-top" src="https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Terri_Sewell.jpg" alt="" /> */}
