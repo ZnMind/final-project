@@ -9,7 +9,7 @@ const Navbar = () => {
             
             <p className="beHeard">Be Heard, Alabama!</p>
             
-            <div className="nav navHomeBtn d-flex ">
+            <div className="nav navHomeBtn ">
                
                 <NavLink to="/" >Home</NavLink>
                 

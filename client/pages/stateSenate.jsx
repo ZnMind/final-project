@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import "../css/usReps.css";
+import "../css/stateSenate.css";
 
 const StateSenate = () => {
   const [senate, setSenate] = useState([]);
 
   useEffect(() => {
     fetch(
-      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=upper&page=1&per_page=50&apikey=ed755855-5b9f-4586-95b0-93fa290c5349",
+      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=upper&page=1&per_page=50&apikey=3e1fb642-5ba7-482c-ab7b-6a42d2db4bb6",
       {}
     )
       .then((response) => response.json())
@@ -21,11 +21,11 @@ const StateSenate = () => {
 
   return (
     <>
-      <Navbar />
+      
       <body
-        id="stateReps"
-        className="container d-flex flex-row justify-content-center align-items-center flex-wrap"
-      >
+        id="stateSenate"
+        className=" d-flex flex-row justify-content-center align-items-center flex-wrap">
+      <Navbar />
         {senate.map((sen) => (
           <div id="rep-style" className="container w-50">
             <div className="row d-flex flex-row  p-0 m-2">
@@ -50,13 +50,13 @@ const StateSenate = () => {
 
                       {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={`mailto:${sen.email}`}
                       >
                         Email
                       </a>
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={sen.openstates_url}
                       >
                         Website

@@ -27,14 +27,14 @@ const UsReps = () => {
   return (
     <>
       
-      <body id="usRepsBody">
-        <div id="repPics">
+      <body id="usRepsBody" >
+        <div id="repPics" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
         <Navbar />
         {reps.map((rep) => {
           if (rep.state == "AL") {
             return (
-              <div id="rep-style" className="container-fluid">
-                <div className="row w-50 m-5">
+              <div id="rep-style" className="container-fluid w-50">
+                <div className="row d-flex flex-row m-2 ">
                   <div id="test" className="col-12" key={rep.id}>
                     <div className="card shadow rounded text-center ">
                       {/* <img className="card-top" src="https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Terri_Sewell.jpg" alt="" /> */}
