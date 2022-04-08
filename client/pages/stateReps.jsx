@@ -23,14 +23,16 @@ const StateReps = () => {
 
   return (
     <>
+      <body id="stateReps" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
       <Navbar />
-      <Link to="/stateReps2" className="btn btn-danger m-2">
+      <button id = "staterepsbutton">
+      <Link to="/stateReps2">
         Next Page
       </Link>
-      <body id="stateReps" className="container d-flex flex-row justify-content-center align-items-center flex-wrap">
+      </button>
         {reps.map((rep) => (
           <div id="rep-style" className="container w-50">
-            <div className="row d-flex flex-row  p-0 m-2">
+            <div className="row d-flex flex-row m-2 justify-content-center">
               <div id="test" className=" w-75">
                 <div className="card shadow rounded text-center align-items-center">
                   <div className="card-header pull-left">
@@ -39,7 +41,7 @@ const StateReps = () => {
                       src="https://baldwincountyal.gov/images/default-source/legislation-delegation/houseseal.gif?sfvrsn=dee3820c_0"
                       alt="Card image cap"
                     ></img>
-                    <div className="card-body">
+                    <div className="card-body repBody">
                       <h4 className="card-title">{rep.name}</h4>
                       <h6 className="card-subtitle mt-2">
                         District: {rep.current_role.district}
@@ -51,13 +53,13 @@ const StateReps = () => {
 
                       {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={`mailto:${rep.email}`}
                       >
                         Email
                       </a>
                       <a
-                        className="m-2 btn btn-outline-primary"
+                        className="m-2 btn btn-outline-danger"
                         href={rep.openstates_url}
                       >
                         Website
