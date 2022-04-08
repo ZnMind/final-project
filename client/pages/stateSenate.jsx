@@ -7,7 +7,7 @@ const StateSenate = () => {
 
   useEffect(() => {
     fetch(
-      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=upper&page=1&per_page=50&apikey=ed755855-5b9f-4586-95b0-93fa290c5349",
+      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=upper&page=1&per_page=50&apikey=3e1fb642-5ba7-482c-ab7b-6a42d2db4bb6",
       {}
     )
       .then((response) => response.json())

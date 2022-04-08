@@ -4,8 +4,8 @@
 }
 
 #stateReps {
-  background-image: url("../images/seal200.png"),
-    linear-gradient(rgb(44, 42, 42), #090909);
+  background-image: url("../images/seal200.png");
+  background-color: #090909;
   background-repeat: no-repeat, no-repeat;
   background-size: 100px, cover;
 }
@@ -13,7 +13,11 @@
 #staterepsbutton {
   background-color: rgb(156, 3, 3);
   border-radius: 8px;
-  color:rgba(255, 255, 255, 0.578);
-  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664), 0 17px 50px 0 rgba(105, 11, 11, 0.597);
-  font-size: 16px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 20em;
+  margin-top: 5em;
 }

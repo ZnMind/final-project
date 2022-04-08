@@ -91,15 +91,15 @@ const Test = () => {
                 console.log(obj);
                 return obj;
             })
-            .then(async obj => {
-                obj.forEach(async element => {
-                    await fetch("http://localhost:3000/api/state", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(element)
-                    })
-                })
-            })
+            // .then(async obj => {
+            //     obj.forEach(async element => {
+            //         await fetch("http://localhost:3000/api/state", {
+            //             method: "POST",
+            //             headers: { "Content-Type": "application/json" },
+            //             body: JSON.stringify(element)
+            //         })
+            //     })
+            // })
             .catch(err => console.log(err));
     }
 
@@ -136,7 +136,7 @@ const Test = () => {
 
 
 
-                <button onClick={updateReps} disabled>Update US Reps</button>
+                <button onClick={updateReps}>Update US Reps</button>
                 <>
                     <body className="usSenatorsBody">
                         <Navbar />
