@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar.jsx";
 import { Link } from "react-router-dom";
 // import "../css/stateReps.css";
 
-const StateReps = () => {
+const StateReps3 = () => {
   const [reps, setReps] = useState([]);
 
   useEffect(() => {
     fetch(
-      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=lower&page=1&per_page=50&apikey=ed755855-5b9f-4586-95b0-93fa290c5349",
+      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=lower&page=3&per_page=50&apikey=ed755855-5b9f-4586-95b0-93fa290c5349",
       {}
     )
       .then((response) => response.json())
@@ -24,14 +24,14 @@ const StateReps = () => {
     <>
       <Navbar />
       <Link to="/stateReps2" className="btn btn-danger m-2">
-        Next Page
+        Previous Page
       </Link>
-      <body id="stateReps" className="container d-flex flex-row justify-content-center align-items-center flex-wrap">
+      <body id="stateReps">
         {reps.map((rep) => (
-          <div id="rep-style" className="container w-50">
-            <div className="row d-flex flex-row  p-0 m-2">
-              <div id="test" className=" w-75">
-                <div className="card shadow rounded text-center align-items-center">
+          <div id="rep-style" className="container-fluid">
+            <div className="row w-50">
+              <div id="test" className="col-12">
+                <div className="card shadow rounded text-center">
                   <div className="card-header pull-left">
                     <img
                       className="card-img-left"
@@ -69,11 +69,11 @@ const StateReps = () => {
           </div>
         ))}
         <Link to="/stateReps2" className="btn btn-danger m-2">
-          Next Page
+          Previous Page
         </Link>
       </body>
     </>
   );
 };
 
-export default StateReps;
+export default StateReps3;
