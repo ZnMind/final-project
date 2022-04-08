@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import "../css/usReps.css";
+import "../css/results.css";
 
 
 const Results = () => {
@@ -32,13 +32,13 @@ const Results = () => {
     }, []);
 
     return (
-
-        <div id="usRepsBody">
+        <body id="resultsBody">
+        <div  className="container d-flex flex-row justify-content-center align-items-center flex-wrap">
             <Navbar />
             {details.map((details, index) => {
                 return (
-                    <div id="rep-style" className="container-fluid" key={index}>
-                        <div className="row w-50">
+                    <div id="rep-style" className="container-fluid w-50" key={index}>
+                        <div className="row d-flex flex-row  p-0 m-2">
                             <div id="test" className="col-12">
                                 <div className="card shadow rounded text-center ">
                                     {/* <img className="card-top" src="https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Terri_Sewell.jpg" alt="" /> */}
@@ -56,7 +56,7 @@ const Results = () => {
                                             Phone # {details.phones[0]}
                                         </h6>
                                         {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
-                                        <a href={details.urls[0]}>Website</a>
+                                        <a href={details.urls[0]} className="btn btn-outline-danger mt-3">Website</a>
                                         {/* <a
                                             href={`//www.facebook.com/${rep.facebook_account}`}
                                             target="_blank"
@@ -72,7 +72,7 @@ const Results = () => {
                 //}
             })}
         </div>
-
+</body>
     );
 
 }

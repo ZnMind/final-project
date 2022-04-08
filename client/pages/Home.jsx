@@ -36,7 +36,7 @@ const Home = () => {
                                 <div className="card-body shadow rounded text-center homeCard">
                                     <h3 className="card-title"></h3>
                                     <p className="card-text">
-                                        Search for your local representatives.
+                                        Search for representatives by entering your full address, zip code, or city.
                                     </p>
                                     <input placeholder="address city state" type="text" className="searchInput m-1" 
                                     value={location} onChange={e => setLocation(e.target.value)} 
@@ -49,10 +49,12 @@ const Home = () => {
                                         }}
                                         >Submit</button>
                                     <p>Or search by position</p>
+                                    <Link to="/Governor" className='btn btn-outline-danger m-2'>Governor and Officials</Link>
                                     <Link to="/usSenators" className="btn btn-outline-danger m-2">U.S. Senators</Link>
                                     <Link to="/usReps" className="btn btn-outline-danger m-2">U.S. Representatives</Link>
                                     <Link to="/stateSenate" className="btn btn-outline-danger m-2">State Senators</Link>
                                     <Link to="/stateReps" className="btn btn-outline-danger m-2">State Representatives</Link>
+                                    <h6 className="pwrBy">Powered By Google Civic Information API, OpenStates API, ProPublica API</h6>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +62,8 @@ const Home = () => {
                     </div>
                 </main>
 
-                <h6 className="pwrBy m-5 ">Powered By Google Civic Information API</h6>
+                
+                
 
 
 

@@ -52,8 +52,11 @@ color: rgb(253, 253, 253);
 .pwrBy{
     color: white;
     /* margin-top: 240px; */
-    
     font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 0;
+    /* margin-left:275px; */
+    
     
     
 }

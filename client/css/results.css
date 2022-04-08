@@ -1,0 +1,13 @@
+
+#resultsBody {
+    background-color: black;
+    /* background-color: #252525; */
+    background-image: url('../images/seal200.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+.card-body {
+    background-image: linear-gradient(#090909,#252525);
+    color: rgba(255, 255, 255, 0.578);
+}

@@ -9,7 +9,7 @@ import StateSenate from "./pages/stateSenate.jsx"
 import StateReps from "./pages/stateReps.jsx"
 import StateReps2 from "./pages/stateReps2.jsx"
 import StateReps3 from "./pages/stateReps3.jsx"
-
+import Governor from "./pages/Governor.jsx"
 // import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
@@ -26,6 +26,7 @@ const App = () => {
                 <Route path="/StateReps" element={<StateReps />} />
                 <Route path="/StateReps2" element={<StateReps2 />} />
                 <Route path="/StateReps3" element={<StateReps3 />} />
+                <Route path="/Governor" element={<Governor />} />
             </Routes>
         </BrowserRouter>
     )
