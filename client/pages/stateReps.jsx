@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-//import "../css/stateReps.css";
+import "../css/stateReps.css";
 import { Link } from "react-router-dom";
 
 
 const StateReps = () => {
   const [reps, setReps] = useState([]);
 
+  const buttonClick = () => {
+    window.location.href = "/statereps2"}
+
   useEffect(() => {
     fetch(
-      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=lower&page=1&per_page=50&apikey=ed755855-5b9f-4586-95b0-93fa290c5349",
+      "https://v3.openstates.org/people?jurisdiction=Alabama&org_classification=lower&page=1&per_page=50&apikey=3e1fb642-5ba7-482c-ab7b-6a42d2db4bb6",
       {}
     )
       .then((response) => response.json())
@@ -25,10 +28,8 @@ const StateReps = () => {
     <>
       <body id="stateReps" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
       <Navbar />
-      <button id = "staterepsbutton">
-      <Link to="/stateReps2">
-        Next Page
-      </Link>
+      <button id = "staterepsbutton" onClick={buttonClick} >
+     Next Page
       </button>
         {reps.map((rep) => (
           <div id="rep-style" className="container w-50">
