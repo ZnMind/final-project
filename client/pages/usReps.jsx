@@ -52,22 +52,22 @@ const UsReps = () => {
                           Phone # {rep.phone}
                         </h6>
                         {/* <p className="card-te"https://sewell.house.gov/contact/email-me"xt">Mailing address: Two 20th Street NorthSuite 1130 Birmingham, AL 35203</p> */}
-                        <a href={rep.url}>Website</a>
-                        <a
+                        <a className = "btn btn-outline-primary" href={rep.url}>Website</a>
+                        <a 
                           href={`//www.facebook.com/${rep.facebook_account}`}
-                          className="fa fa-facebook"
+                          className="fa fa-facebook m-2"
                           style= {{color: "#3b5998"}}
                           target="_blank"
                         ></a>
                          <a
                           href={`//www.twitter.com/${rep.twitter_account}`}
-                          className="fa fa-twitter"
+                          className="fa fa-twitter m-2"
                           style= {{color: "#55acee"}}
                           target="_blank"
                         ></a>
                          <a
                           href={`//www.youtube.com/${rep.youtube_account}`}
-                          className="fa fa-youtube"
+                          className="fa fa-youtube m-2"
                           style= {{color: "#cd201f"}}
                           target="_blank"
                         ></a>
