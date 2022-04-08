@@ -9,7 +9,7 @@ const UsSenators = () => {
     return (
         <>
 
-            <body className="usSenatorsBody">
+            <body className="usSenatorsBody ">
                 <Navbar />
                 <div id="usSenatorsWrapper">
                     <h1 className="usSenatorsTitle text-center">U.S. Senators</h1>
@@ -19,7 +19,7 @@ const UsSenators = () => {
                             <div className="col-sm-3 ">
                                 <div className="card shadow rounded text-center mb-2">
                                     <img className="card-top"  src="http://bioguide.congress.gov/bioguide/photo/S/S000320.jpg " alt="" />
-                                    <div className="card-body bodyUsSenators">
+                                    <div className="card-body cardBodyUsSenators">
                                         <h5 className="card-title">Richard C. Shelby</h5>
                                         {/* <h6 className="card-subtitle">Washington DC</h6> */}
                                         <small className="card-subtitle mt-1">Republican Party</small>
@@ -34,7 +34,7 @@ const UsSenators = () => {
                             <div className="col-sm-3 ">
                                 <div className="card shadow rounded text-center mb-2">
                                     <img className="card-top" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/TommyTuberville.jpg" alt="" />
-                                    <div className="card-body bodyUsSenators">
+                                    <div className="card-body cardBodyUsSenators">
                                         <h5 className="card-title">Tommy Tuberville</h5>
                                         {/* <h6 className="card-subtitle">Washington DC</h6> */}
                                         <small className="card-title">Republican Party</small>

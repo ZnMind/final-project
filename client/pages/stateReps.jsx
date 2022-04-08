@@ -27,9 +27,9 @@ const StateReps = () => {
       <Link to="/stateReps2" className="btn btn-danger m-2">
         Next Page
       </Link>
-      <body id="stateReps" className="container d-flex flex-row justify-content-center align-items-center flex-wrap">
+      <body id="stateReps" className=" d-flex flex-row justify-content-center align-items-center flex-wrap">
         {reps.map((rep) => (
-          <div id="rep-style" className="container w-50">
+          <div id="rep-style" className=" w-50">
             <div className="row d-flex flex-row  p-0 m-2">
               <div id="test" className=" w-75">
                 <div className="card shadow rounded text-center align-items-center">
