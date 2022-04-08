@@ -28,9 +28,9 @@ const StateReps = () => {
     <>
       <body id="stateReps" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
       <Navbar />
-      <button id = "staterepsbutton" onClick={buttonClick} >
+     <div className= "d-flex justify-content-start"> <button id = "staterepsbutton" onClick={buttonClick} >
      Next Page
-      </button>
+      </button></div>
         {reps.map((rep) => (
           <div id="rep-style" className="container w-50">
             <div className="row d-flex flex-row m-2 justify-content-center">
