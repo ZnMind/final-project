@@ -26,7 +26,7 @@ const UsSenators = () => {
             <body className="usSenatorsBody ">
                 <Navbar />
                 <div id="usSenatorsWrapper">
-                    {/* <h1 className="usSenatorsTitle text-center">U.S. Senators</h1> */}
+                   <h1 className="usSenatorsTitle text-center">U.S. Senators</h1>
 
                     <div className="container senateContainer">
                         <div className="row d-flex flex-row justify-content-center align-items-center ">
