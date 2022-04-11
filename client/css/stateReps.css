@@ -18,7 +18,110 @@
     0 17px 50px 0 rgba(105, 11, 11, 0.597);
   font-size: 20px;
   font-weight: bolder;
+  
   margin-right: 73em;
+  
+  
+ 
+}
+
+#staterepsbuttonbottom {
+  background-color: rgb(156, 3, 3);
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+  
+  margin-right: 73em;
+  margin-bottom: 3em;
+ 
+}
+#staterepsbuttonbottomnextpage {
+  background-color: rgb(156, 3, 3);
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+  
+  margin-right: 73em;
+  
+ 
+}
+
+#staterepsbuttonback {
+  background-color: rgb(156, 3, 3);
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+  
+  margin-right: 80em;
   margin-top: 3em;
   
+ 
 }
+
+#staterepsbutton2 {
+  background-color: rgb(156, 3, 3);
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+
+  margin-top: 5em
+  
+  
+  
+
+ 
+}
+
+#staterepsbutton4 {
+  background-color: rgb(156, 3, 3);
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+  
+  margin-right: 73em;
+  margin-top: 5em;
+
+  
+ 
+}
+
+#staterepsbuttonbottom2 {
+  background-color: rgb(156, 3, 3);
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(105, 7, 7, 0.664),
+    0 17px 50px 0 rgba(105, 11, 11, 0.597);
+  font-size: 20px;
+  font-weight: bolder;
+  
+  margin-right: 73em;
+  margin-bottom: 3em;
+
+  
+ 
+}
+
+
+
+
+
+/* @media screen and (max-width: 1614px) {
+    #staterepsbutton {
+        background-color: blue;
+    }
+} */
