@@ -2,6 +2,10 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
+    const buttonClick = () => {
+        window.location.href = "/";
+      };
+
     return (
 
         
@@ -11,7 +15,9 @@ const Navbar = () => {
             
             <div className="nav navHomeBtn ">
                
-                <NavLink to="/" >Home</NavLink>
+            <button id="staterepsbutton" onClick={buttonClick}>
+            Home
+          </button>
                 
             </div>
         </div>

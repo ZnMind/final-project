@@ -23,10 +23,10 @@ const UsSenators = () => {
     return (
         <>
 
-            {/* <body className="usSenatorsBody ">
+            <body className="usSenatorsBody ">
                 <Navbar />
                 <div id="usSenatorsWrapper">
-                    {/* <h1 className="usSenatorsTitle text-center">U.S. Senators</h1> */}
+                   <h1 className="usSenatorsTitle text-center">U.S. Senators</h1>
 
                     <div className="container senateContainer">
                         <div className="row d-flex flex-row justify-content-center align-items-center ">
@@ -65,11 +65,11 @@ const UsSenators = () => {
 
                 </div>
 
-            </body> */}
+            </body> 
 
 
 
-<body id="usRepsBody" >
+{/* <body id="usRepsBody" >
         <div id="repPics" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
         <Navbar />
         <input value={location.toUpperCase()} onChange={e => setLocation(e.target.value)}></input>
@@ -84,9 +84,9 @@ const UsSenators = () => {
                         <h4 className="card-title">
                           {rep.name}
                         </h4>
-                        {/* <h6 className="card-subtitle">
+                        <h6 className="card-subtitle">
                           District: {rep.district}
-                        </h6> */}
+                        </h6>
                         <h6 className="card-subtitle mt-2">
                           Party: {rep.party}
                         </h6>
@@ -104,7 +104,7 @@ const UsSenators = () => {
         )}
 
         </div>
-      </body>
+      </body> */}
 
         </>
     )
