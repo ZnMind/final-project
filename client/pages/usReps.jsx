@@ -43,13 +43,13 @@ const UsReps = () => {
       <body id="usRepsBody" >
         <div id="repPics" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
         <Navbar />
-        <input value={location.toUpperCase()} onChange={e => setLocation(e.target.value)}></input>
+        {/* <input value={location.toUpperCase()} onChange={e => setLocation(e.target.value)}></input> */}
         {reps.map((rep, index) => {
           //if (rep.state == "AL") {
             return (
               <div id="rep-style" className="container-fluid w-50" key={index}>
-                <div className="row d-flex flex-row m-2 ">
-                  <div id="test" className="col-12" key={rep.id}>
+                <div className="row d-flex flex-row m-2 justify-content-center">
+                  <div id="test" className="col-6" key={rep.id}>
                     <div className="card shadow rounded text-center ">
                       <img className="card-top" src={rep.photo} alt="" />
                       <div className="card-body">
