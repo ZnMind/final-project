@@ -39,12 +39,12 @@ const StateReps2 = () => {
         <br />
         <div className="d-flex justify-content-start mx-5">
           {" "}
-          <button id="staterepsbutton4" className="mr-md-3" onClick={buttonClick}>
-            Next Page
+          <button id="staterepsbutton4" className="mr-md-3" onClick={buttonClickBack}>
+            Prev Page
           </button>
 
-          <button id="staterepsbutton2" className="ml-md-3" onClick={buttonClickBack}>
-            Prev Page
+          <button id="staterepsbutton2" className="ml-md-3" onClick={buttonClick}>
+            Next Page
           </button>
         </div>
 

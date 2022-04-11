@@ -19,7 +19,8 @@ const Governor = () => {
                                 <h6>Governor</h6>
                                 <p>Phone:<small> (334) 242-7100</small></p>
                                 <p className="card-text mt-02">Mailing Address: <small>600 Dexter Avenue Montgomery, AL 36130</small></p>
-                                <a href="https://contact.governor.alabama.gov/contact.aspx" className="govEmail btn btn-outline-danger">Email Form</a>
+                                <a href="https://contact.governor.alabama.gov/contact.aspx" className="govEmail btn btn-outline-danger mr-1">Email</a>
+                                <a href="https://governor.alabama.gov/" className="govEmail btn btn-outline-danger">Website</a>
                             </div>
                         </div>
                     </div>
@@ -36,7 +37,8 @@ const Governor = () => {
                                 <h6>Attorney General</h6>
                                 <p>Phone:<small> (334) 242-7300</small></p>
                                 <p className="card-text mt-02">Mailing Address:<small>501 Washington Avenue Montgomery, AL 36104</small></p>
-                               <a href="https://www.alabamaag.gov/generalcontact" className="govEmail btn btn-outline-danger">Email Form </a>
+                               <a href="https://www.alabamaag.gov/generalcontact" className="govEmail btn btn-outline-danger mr-1">Email</a>
+                               <a href="https://www.alabamaag.gov/about" className="govEmail btn btn-outline-danger">Website</a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +51,8 @@ const Governor = () => {
                                 <h6>Secretary of State</h6>
                                 <p>Phone:<small> (334) 242-7200</small></p>
                                 <p className="card-text mt-02">Mailing Address: <small>P.O. Box 5616 Montgomery, AL 36103-5616</small></p>
-                               <a href="mailto:John.Merrill@sos.alabama.gov" className="govEmail btn btn-outline-danger">Email</a>
+                               <a href="mailto:John.Merrill@sos.alabama.gov" className="govEmail btn btn-outline-danger mr-1">Email</a>
+                               <a href="https://www.sos.alabama.gov/" className="govEmail btn btn-outline-danger">Website</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +65,8 @@ const Governor = () => {
                                 <h6>Leutenant Governor</h6>
                                 <p>Phone:<small> (334) 261-9590</small></p>
                                 <p className="card-text mt-02">Mailing Address: <small>11 South Union Street Montgomery, AL 36130</small></p>
-                               <a href="mailto:ltgov@ltgov.alabama.gov" className="govEmail btn btn-outline-danger">Email </a>
+                               <a href="mailto:ltgov@ltgov.alabama.gov" className="govEmail btn btn-outline-danger mr-1">Email </a>
+                               <a href="https://ltgov.alabama.gov/" className="govEmail btn btn-outline-danger">Website</a>
                             </div>
                         </div>
                     </div>
