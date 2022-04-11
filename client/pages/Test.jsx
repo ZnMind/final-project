@@ -136,7 +136,7 @@ const Test = () => {
 
 
 
-                <button onClick={updateReps}>Update US Reps</button>
+                <button onClick={updateReps} disabled>Update US Reps</button>
                 <>
                     <body className="usSenatorsBody">
                         <Navbar />
