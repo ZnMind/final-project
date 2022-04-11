@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar.jsx";
 import "../css/stateReps.css";
 import { Link } from "react-router-dom";
 
-
 const StateReps = () => {
   const [reps, setReps] = useState([]);
 
   const buttonClick = () => {
-    window.location.href = "/statereps2"}
+    window.location.href = "/statereps2";
+  };
 
   useEffect(() => {
     fetch(
@@ -26,11 +26,20 @@ const StateReps = () => {
 
   return (
     <>
-      <body id="stateReps" className="d-flex flex-row justify-content-center align-items-center flex-wrap">
-      <Navbar />
-     <div className= "d-flex justify-content-start"> <button id = "staterepsbutton" onClick={buttonClick} >
-     Next Page
-      </button></div>
+      <body
+        id="stateReps"
+        className="d-flex flex-row justify-content-center align-items-center flex-wrap"
+      >
+        <Navbar />
+
+        <br />
+        <div className="d-flex justify-content-start">
+          {" "}
+          <button id="staterepsbutton" onClick={buttonClick}>
+            Next Page
+          </button>
+        </div>
+
         {reps.map((rep) => (
           <div id="rep-style" className="container w-50">
             <div className="row d-flex flex-row m-2 justify-content-center">
@@ -72,9 +81,10 @@ const StateReps = () => {
             </div>
           </div>
         ))}
-        <Link to="/stateReps2" className="btn btn-danger m-2">
-          Next Page
-        </Link>
+
+<button id="staterepsbuttonbottom" onClick={buttonClick}>
+            Next Page
+          </button>
       </body>
     </>
   );

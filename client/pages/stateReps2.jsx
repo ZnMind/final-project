@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import { Link } from "react-router-dom";
 import "../css/stateReps.css";
+import { Link } from "react-router-dom";
 
 const StateReps2 = () => {
   const [reps, setReps] = useState([]);
+
+  const buttonClick = () => {
+    window.location.href = "/statereps3";
+  };
+
+  const buttonClickBack = () => {
+    window.location.href = "/statereps";
+  };
 
   useEffect(() => {
     fetch(
@@ -22,17 +30,27 @@ const StateReps2 = () => {
 
   return (
     <>
-      <Navbar />
-      <Link to="/stateReps" className="btn btn-danger m-2">
-        Previous Page
-      </Link>
-      <Link to="/stateReps3" className="btn btn-danger m-2">
-        Next Page
-      </Link>
-      <body id="stateReps" className="container d-flex flex-row justify-content-center align-items-center flex-wrap">
+      <body
+        id="stateReps"
+        className="d-flex flex-row justify-content-center align-items-center flex-wrap"
+      >
+        <Navbar />
+
+        <br />
+        <div className="d-flex justify-content-start mx-5">
+          {" "}
+          <button id="staterepsbutton4" className="mr-md-3" onClick={buttonClick}>
+            Next Page
+          </button>
+
+          <button id="staterepsbutton2" className="ml-md-3" onClick={buttonClickBack}>
+            Prev Page
+          </button>
+        </div>
+
         {reps.map((rep) => (
           <div id="rep-style" className="container w-50">
-            <div className="row d-flex flex-row  p-0 m-2">
+            <div className="row d-flex flex-row m-2 justify-content-center">
               <div id="test" className=" w-75">
                 <div className="card shadow rounded text-center align-items-center">
                   <div className="card-header pull-left">
@@ -41,7 +59,7 @@ const StateReps2 = () => {
                       src="https://baldwincountyal.gov/images/default-source/legislation-delegation/houseseal.gif?sfvrsn=dee3820c_0"
                       alt="Card image cap"
                     ></img>
-                    <div className="card-body">
+                    <div className="card-body repBody">
                       <h4 className="card-title">{rep.name}</h4>
                       <h6 className="card-subtitle mt-2">
                         District: {rep.current_role.district}
@@ -71,12 +89,14 @@ const StateReps2 = () => {
             </div>
           </div>
         ))}
-        <Link to="/stateRep" className="btn btn-danger m-2">
-          Previous Page
-        </Link>
-        <Link to="/stateReps3" className="btn btn-danger m-2">
-          Next Page
-        </Link>
+
+<button id="staterepsbuttonbottomnextpage" onClick={buttonClick}>
+            Next Page
+          </button>
+          <button className="d-flex flex-row justify-content-start" id="staterepsbuttonbottom" onClick={buttonClickBack}>
+            Prev Page
+          </button>
+          
       </body>
     </>
   );
